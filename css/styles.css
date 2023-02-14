@@ -232,6 +232,13 @@ body {
 .features__item:last-child {
   margin-right: 0;
 }
+.features__wrapper {
+  max-width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  background-color: var(--color__cloud);
+  border-radius: 4px;
+}
 .features__title {
   margin-bottom: 8px;
   font-weight: 500;
@@ -309,6 +316,32 @@ body {
 .our-team__wrapper {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+/* Customers */
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.customers__title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color__navy-blue);
+}
+.customers__list {
+  display: flex;
+  gap: 24px;
+}
+.customers__item {
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--color__light-slate);
+  border-radius: 4px;
 }
 
 /* Portfolio */
