@@ -152,6 +152,12 @@ body {
   padding-bottom: 100px;
   background-color: var(--color__navy-blue);
 }
+.footer .container {
+  display: flex;
+}
+.wrapper--first {
+  margin-right: 120px;
+}
 .footer__logo {
   display: block;
   margin-bottom: 16px;
@@ -375,9 +381,6 @@ body {
   display: flex;
   gap: 24px;
 }
-.customers__item {
-  color: var(--color__light-slate);
-}
 .customers__link {
   display: flex;
   justify-content: center;
@@ -386,7 +389,7 @@ body {
   height: 88px;
   border: 1px solid currentColor;
   border-radius: 4px;
-  color: currentColor;
+  color: var(--color__light-slate);
 }
 .customers__link:hover,
 .customers__link:focus {
