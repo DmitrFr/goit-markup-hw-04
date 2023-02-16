@@ -172,11 +172,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--color__cornflower);
 }
-.footer .container {
-  display: flex;
-  gap: 120px;
-}
-.footer-icon__title {
+.footer-icon__text {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -196,7 +192,6 @@ body {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  cursor: pointer;
 }
 .footer-icon__link:hover,
 .footer-icon__link:focus {
@@ -207,12 +202,13 @@ body {
 .main-section {
   padding-top: 188px;
   padding-bottom: 188px;
+  margin: 0 auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1440px;
-  max-height: 600px;
+  height: 600px;
   background-color: var(--color__navy-blue);
 }
 .main-section__title {
@@ -354,7 +350,6 @@ body {
   height: 40px;
   background-color: var(--color__iris);
   border-radius: 50%;
-  cursor: pointer;
 }
 .logo__link:hover,
 .logo__link:focus {
@@ -363,7 +358,7 @@ body {
 
 /* Customers */
 .customers {
-  padding-top: 130px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 .customers__title {
@@ -381,19 +376,20 @@ body {
   gap: 24px;
 }
 .customers__item {
+  color: var(--color__light-slate);
+}
+.customers__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 168px;
   height: 88px;
-  border: 1px solid var(--color__light-slate);
+  border: 1px solid currentColor;
   border-radius: 4px;
-  color: var(--color__light-slate);
-  cursor: pointer;
+  color: currentColor;
 }
-.customers__item:hover,
-.customers__item:focus {
-  border: 1px solid var(--color__ocean);
+.customers__link:hover,
+.customers__link:focus {
   color: var(--color__ocean);
 }
 .customer__icon {
@@ -448,18 +444,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--color__navy-blue);
 }
-.portfolio__subtitle:hover,
-.portfolio__subtitle:focus {
-  color: var(--color__ocean);
-}
 .portfolio__text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color__slate);
-}
-.portfolio__text:hover,
-.portfolio__text:focus {
-  color: var(--color__ocean);
 }
 .portfolio__wrapper {
   padding: 32px 16px;
@@ -467,8 +455,11 @@ body {
   border-bottom: 1px solid var(--color__cornflower);
   border-left: 1px solid var(--color__cornflower);
 }
-.portfolio__item:hover,
-.portfolio__item:focus {
+.portfolio__link {
+  display: block;
+}
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
